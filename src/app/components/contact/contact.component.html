@@ -1,0 +1,29 @@
+<section class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="text-danger">
+          Name is required.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+        <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+          Please enter a valid email.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="5" formControlName="message"></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
+          Message is required.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Submit</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #222;
+}
