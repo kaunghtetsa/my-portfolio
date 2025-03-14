@@ -1,8 +1,94 @@
 .contact-section {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
+  margin-top: 65px;
+  padding: 20px 0; /* Add padding for consistency */
+  font-size: 1rem; 
+  border-radius: 20px;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section  {
+  width: 100%; /* Ensure the form takes full width */
+  background-color: #ffffff; /* Add a white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 20px; /* Add padding for better spacing */
+  align-items: center; /* Center items horizontally */
+  border-radius: 20px;
+}
+
+.contact-section .form-control {
+  width: 100%; /* Make form inputs full width by default */
+  padding: 20px; /* Add padding for better input spacing */
+  margin-bottom: 5px; /* Add spacing between form fields */
+  border: 1px solid #ced4da; /* Add a border to inputs */
+  border-radius: 5px; /* Add rounded corners to inputs */
+ }
+
+.contact-section .btn-primary {
+  width: auto; /* Let the button size itself */
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #007bff; /* Primary button color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add rounded corners to the button */
+  margin-bottom: 20px; /* Add spacing above the button */
+  min-width: 200px;
+}
+
+.contact-section .btn-primary:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.contact-section .text-danger {
+  font-size: 0.8rem; /* Smaller font size for error messages */
+  margin-top: 5px; /* Add spacing above error messages */
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  .contact-section  {
+    width: 500px; /* Slightly reduce width for larger screens */
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+}
+
+@media (min-width: 768px) {
+  .contact-section  {
+    width: 600px; /* Slightly reduce width for larger screens */
   }
   
-  .contact-section form {
-    max-width: 600px;
-    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .contact-section  {
+    width: 800px; /* Further reduce width for even larger screens */
   }
+ 
+}
+
+@media (min-width: 1200px) {
+  .contact-section  {
+    width: 1000px; /* Adjust width for extra-large screens */
+  }
+  
+}
+
+.alert-success {
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  text-align: center;
+  font-size: 1rem;
+  
+  padding: 10px;
+  border-radius: 5px;
+}
+

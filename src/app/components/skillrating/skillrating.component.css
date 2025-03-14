@@ -1,0 +1,11 @@
+.star-rating {
+    font-size: 24px; /* Adjust the size of the stars */
+    color: gold; /* Color for filled stars */
+    font-size: 18px; /* Adjust the size of the stars */
+    margin-top: 10px; /* Add some spacing */
+
+  }
+  
+  .star-rating span {
+    margin-right: 4px; /* Space between stars */
+  }

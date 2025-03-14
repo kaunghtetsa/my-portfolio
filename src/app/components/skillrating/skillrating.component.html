@@ -1,0 +1,6 @@
+<div class="star-rating">
+    <span *ngFor="let star of getStarsArray(); let i = index">
+      <span *ngIf="star === 'full'">&#9733;</span> <!-- Filled star -->
+      <span *ngIf="star === 'empty'">&#9734;</span> <!-- Empty star -->
+    </span>
+  </div>

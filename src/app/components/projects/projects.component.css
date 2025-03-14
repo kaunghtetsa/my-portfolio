@@ -1,3 +1,16 @@
+.projects-section {
+  background-color: #f8f9fa;
+  margin-top: 65px;
+  padding: 20px 0; /* Add padding for consistency */
+  border-radius: 20px;
+}
+
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
 .projects-section .card {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

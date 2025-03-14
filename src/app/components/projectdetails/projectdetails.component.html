@@ -1,0 +1,13 @@
+<div class="popup-overlay" *ngIf="project">
+    <div class="popup-box">
+      <button class="close-button" (click)="onClose()">X</button>
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.description }}</p>
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+      </ul>
+      <strong>Team Members : </strong> <p>{{project.headcount}}</p>
+      
+    </div>
+  </div>

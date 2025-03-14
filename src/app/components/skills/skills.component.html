@@ -1,16 +1,25 @@
-<section class="skills-section py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Skills</h2>
-    <div class="row">
-      <div class="col-md-3" *ngFor="let skill of skills">
-        <div class="card mb-3 text-center">
-          <div class="card-body">
-            <i [class]="skill.icon" class="fa-3x mb-3"></i>
-            <h5 class="card-title">{{ skill.name }}</h5>
-            <p class="card-text">{{ skill.level }}</p>
+<section class="skills-section py-1">
+  <div class="container-style">
+    <h2 class="text-center mb-4">Skills and Experience</h2>
+
+    <div *ngFor="let group of groupedSkills">
+      <h6 class="text-left mt-4">{{ group.type }}</h6> <!-- Group Title -->
+
+      <div class="row">
+        <div class="col-md-2" *ngFor="let skill of group.skills">
+          <div class="card mb-4 text-center">
+            <div class="card-body">
+              <img [src]="'assets/images/skills/' + skill.imgname" 
+                   alt="{{ skill.name }}" 
+                   class="img-fluid mb-3" 
+                   style="height: 60px;">
+              <h5 class="card-title">{{ skill.name }}</h5>
+              <app-skillrating [rating]="skill.rate" [maxStars]=5></app-skillrating>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>

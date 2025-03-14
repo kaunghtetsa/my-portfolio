@@ -1,26 +1,44 @@
-.hero-section {
+  .hero-section {
+    background-color: #ffffff; /* Match other pages */
+    color: #333; /* Darker text for readability */
+    padding: 80px 0; /* Adjust spacing */
+    text-align: center; 
+    border-radius: 20px;
+
+  }
   
-  color: white;
-  padding: 150px 0;
-  text-align: center;
-}
-.btn-primary:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-.hero-section h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.hero-section .lead {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.hero-section .btn {
-  font-size: 1.2rem;
-  padding: 10px 30px;
-}
+  .hero-section h1 {
+    font-size: 2.8rem; /* Large heading for impact */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff; /* Highlighted name */
+  }
+  
+  .hero-section .lead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #555; /* Slightly softer text */
+  }
+  
+  .hero-section .btn-lg {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #007bff; /* Match brand color */
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hero-section .btn-lg:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  

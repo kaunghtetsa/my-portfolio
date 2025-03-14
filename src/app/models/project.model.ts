@@ -5,3 +5,11 @@ export interface Project {
     link: string;
     image: string; 
   }
+  export interface ProjectDetails {
+    title: string;
+    description: string;
+    technologies: string[];
+    headcount: number;
+    
+  }
+  

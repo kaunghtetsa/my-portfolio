@@ -1,8 +1,26 @@
 .about-section {
   background-color: #f8f9fa;
+  margin-top: 65px; 
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 20px; 
 }
 
 .about-section img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  border-radius: 1px;
+  align-items: center;
 }
+
+.about-text {
+  text-align: justify;
+
+}
+
+

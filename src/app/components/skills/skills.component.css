@@ -1,9 +1,40 @@
 .skills-section .card {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  margin: 10px;
 }
 
 .skills-section .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills-section .card-body {
+  padding: 2px;
+}
+
+.skills-section .card-title {
+  font-size: 0.6rem;
+  margin-bottom: 10px;
+}
+
+.skills-section .card-text {
+  font-size: 0.5rem;
+  color: #666;
+}
+
+.skills-section .fa-3x {
+  color: #007bff;
+}
+
+
+.skills-section {
+  background-color: #f8f9fa;
+  margin-top: 65px; 
+  padding: 20px 0;
+  border-radius: 20px;
 }
