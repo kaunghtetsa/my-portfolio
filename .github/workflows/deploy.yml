@@ -31,10 +31,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: angular-build
-          path: dist/my-portfolio/browser
+          path: dist/my-portfolio
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/my-portfolio/browser
+          folder: dist/my-portfolio
