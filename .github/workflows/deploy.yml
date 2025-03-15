@@ -25,7 +25,7 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Build Angular Project
-        run: ng build --configuration=production
+        run: ng build --configuration=production --base-href /my-portfolio/ --deploy-url /my-portfolio/
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
