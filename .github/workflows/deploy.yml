@@ -25,16 +25,16 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Build Angular Project
-        run: ng build --configuration=production --base-href /my-portfolio/ --deploy-url /my-portfolio/
+        run: ng build --configuration=production --base-href /my-portfolio/browser/ --deploy-url /my-portfolio/browser/
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: angular-build
-          path: dist/my-portfolio
+          path: dist/my-portfolio/browser
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/my-portfolio
+          folder: dist/my-portfolio/browser
