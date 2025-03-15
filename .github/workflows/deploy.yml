@@ -3,10 +3,10 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to your branch name if different
+      - main 
 
 permissions:
-  contents: write  # Required for deploying
+  contents: write
 
 jobs:
   build:
@@ -32,4 +32,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/my-portfolio  # Ensure this matches your outputPath
+          folder: dist/my-portfolio 
