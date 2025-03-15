@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { SkillGroup } from '../models/skill.model';
-import { Project ,ProjectDetails} from '../models/project.model';
+import { Project} from '../models/project.model';
 
 @Injectable({
   providedIn: 'root',
@@ -10,29 +10,7 @@ export class DataService {
   
   public readonly send_msg_success = 'Thank you for contacting me! I will get back to you shortly.';
   public readonly send_msg_failed = 'Oops! Something went wrong. Please send email to me.';
-
-  getProjectsDetail(): ProjectDetails[] {
-    return [
-      {
-        title: 'E-POS System',
-        description: 'Developed a POS system for retail businesses.',
-        technologies: ['C#', '.NET Core', 'SQL Server'],
-        headcount: 3, // Add team members
-      },
-      {
-        title: 'Cloud Migration',
-        description: 'Migrated on-premise systems to Azure cloud.',
-        technologies: ['Azure', 'PowerShell'],
-        headcount: 3, // Add team members
-     },
-      {
-        title: 'Bank Integration Projects',
-        description: 'Migrated on-premise systems to Azure cloud.',
-        technologies: ['Azure', 'PowerShell'],
-        headcount: 3, // Add team members
-     },
-    ];
-  }
+ 
 
   getSkills(): SkillGroup[] {
     return [
@@ -111,48 +89,63 @@ export class DataService {
 
   getProjects(): Project[] {
     return [
-      {
-        title: 'E-POS System',
-        description: 'Developed a POS system for retail businesses.',
-        technologies: ['C#', '.NET Core', 'SQL Server'],
-        link: '#',
-        image: 'assets/images/projects/pj-epos.jpg',
-      },
-      {
-        title: 'Cloud Migration',
-        description: 'Migrated on-premise systems to Azure cloud.',
-        technologies: ['Azure', 'PowerShell'],
-        link: '#',
-        image: 'assets/images/projects/pj-cloud-migration.jpg',
-      },
-      {
-        title: 'Bank integration projects',
-        description: 'Migrated on-premise systems to Azure cloud.',
-        technologies: ['Azure', 'PowerShell'],
-        link: '#',
-        image: 'assets/images/projects/pj-bank-integration.png',
-      },
-      {
-        title: 'E-POS System',
-        description: 'Developed a POS system for retail businesses.',
-        technologies: ['C#', '.NET Core', 'SQL Server'],
-        link: '#',
-        image: 'assets/images/projects/pj-epos.jpg',
-      },
-      {
-        title: 'Cloud Migration',
-        description: 'Migrated on-premise systems to Azure cloud.',
-        technologies: ['Azure', 'PowerShell'],
-        link: '#',
-        image: 'assets/images/projects/pj-cloud-migration.jpg',
-      },
-      {
-        title: 'Bank integration projects',
-        description: 'Migrated on-premise systems to Azure cloud.',
-        technologies: ['Azure', 'PowerShell'],
-        link: '#',
-        image: 'assets/images/projects/pj-bank-integration.png',
-      }
-    ];
+        {
+          title: 'E-POS System',
+          recap: 'Retail POS system with inventory and sales management.',       
+          description: 'Developed a POS system with sales tracking, inventory management, and reporting. Provided real-time insights to enhance decision-making. Designed to meet specific client requirements for seamless business operations.',
+          technologies: ['C#', 'WPF', '.NET Core', '.NET 4 Client Profile', 'SQL Server', 'Huawei Cloud', 'Windows Services', 'Web Services (WCF)'],
+          headcount: 6, 
+          image: 'assets/images/projects/pj-epos.jpg',
+        },
+        {
+          title: 'Cloud Migrations',
+          recap: 'Migrated enterprise systems to AWS and Azure.',       
+          description: 'Led cloud migration for on-premise infrastructure. Ensured data integrity, security, and system optimization. Delivered tailored cloud solutions based on client needs.',
+          technologies: ['Azure', 'PowerShell', 'AWS EC2', 'AWS S3'],
+          headcount: 3,
+          image: 'assets/images/projects/pj-cloud-migration.jpg',
+        },
+        {
+          title: 'Bank Integration Projects',
+          recap: 'Integrated banking APIs for secure transactions.',       
+          description: 'Developed banking API integrations with real-time transaction monitoring. Ensured compliance with financial regulations. Provided advanced reporting to meet client needs.',
+          technologies: ['C#', '.NET 6', 'ASP.NET', 'MySQL', 'Unit Testing', 'API', 'Postman', 'Swagger'],
+          headcount: 6,
+          image: 'assets/images/projects/pj-bank-integration.png',
+        },
+        {
+          title: 'Telecom Integration Projects',
+          recap: 'Integrated telecom systems with enterprise solutions.',       
+          description: 'Developed telecom system integrations with advanced reporting. Provided seamless communication between platforms. Focused on customization to match client operations.',
+          technologies: ['C#', '.NET 6', 'ASP.NET', 'MySQL', 'Unit Testing', 'API', 'Postman', 'Swagger'],
+          headcount: 6,
+          image: 'assets/images/projects/pj-telecom-integration.jpg',
+        },
+        {
+          title: 'E-Payment System',
+          recap: 'Developed a secure online payment system.',       
+          description: 'Built a secure and scalable payment system. Integrated multiple payment gateways with detailed reporting. Designed to align with business and client requirements.',
+          technologies: ['C#', '.NET 6', 'ASP.NET', 'MySQL', 'Unit Testing', 'API', 'Postman', 'Swagger'],
+          headcount: 5,
+          image: 'assets/images/projects/pj-epayment.jpg',
+        },
+        {
+          title: 'Ticketing System',
+          recap: 'Developed a ticketing system with reporting features.',       
+          description: 'Designed a system for managing ticket sales and customer data. Implemented real-time reporting for sales analysis and tracking. Customized based on client specifications to optimize business processes.',
+          technologies: ['AWS EC2', 'AWS S3', 'Turnstile (Hardware)', 'C#', 'Java Core', 'Angular'],
+          headcount: 3,
+          image: 'assets/images/projects/pj-ticket-selling.avif',
+        },
+        {
+          title: 'Loyalty POS Projects',
+          recap: 'Implemented a customer loyalty program for retail.',       
+          description: 'Developed a loyalty system integrated with POS. Provided customer rewards tracking and insights via reports. Customized based on client marketing and engagement strategies.',
+          technologies: ['C#', '.NET Core', 'SQL Server', 'API', 'Postman'],
+          headcount: 3,
+          image: 'assets/images/projects/pj-loyalty-program.webp',
+        }
+      ];
+      
   }
 }
