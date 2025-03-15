@@ -5,7 +5,6 @@
   border-radius: 20px;
 }
 
-
 .projects-section h2 {
   text-align: center;
   margin-bottom: 20px; /* Add spacing below the heading */
@@ -15,8 +14,46 @@
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  overflow: hidden; /* Prevents image overflow */
 }
 
 .projects-section .card:hover {
   transform: translateY(-10px);
+}
+
+.projects-section .card-img-top {
+  width: 100%; /* Ensures image takes full card width */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures image fits properly */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.projects-section .card-body {
+  padding: 15px;
+  text-align: left;
+}
+
+.projects-section .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.projects-section .card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.projects-section button {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.projects-section button:hover {
+  background-color: #125ca3;
 }

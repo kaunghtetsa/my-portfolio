@@ -24,18 +24,19 @@
           <img [src]="project.image" class="card-img-top" alt="{{ project.title }}">
           <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
-            <p class="card-text">{{ project.description }}</p>
-            <button (click)="onViewProject(project)" class="btn btn-primary">View Project</button>
+            <p class="card-text">{{ project.recap }}</p>
+            <button mat-button (click)="openProjectDetails(project)">See More</button>
+            
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Updated selector -->
+  <!-- Updated selector 
   <app-projectdetails
     *ngIf="showPopup"
     [project]="selectedProject"
     (close)="onClosePopup()"
-  ></app-projectdetails>
+  ></app-projectdetails>-->
 </section>

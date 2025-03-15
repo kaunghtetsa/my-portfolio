@@ -146,6 +146,5 @@ export class DataService {
           image: 'assets/images/projects/pj-loyalty-program.webp',
         }
       ];
-      
   }
 }

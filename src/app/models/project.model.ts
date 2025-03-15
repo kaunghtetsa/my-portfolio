@@ -3,7 +3,6 @@ export interface Project {
     recap:string;
     description: string;
     technologies: string[];
-    headcount: number;
-    image: string; 
+    image: string;
+    headcount: number;    
   }
- 
