@@ -1,4 +1,4 @@
-name: Deploy Angular App
+name: Deploy Angular App 
 
 on:
   push:
@@ -6,9 +6,8 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -26,6 +25,25 @@ jobs:
 
       - name: Build Angular Project
         run: ng build --configuration=production
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: angular-build
+          path: dist/my-portfolio
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: angular-build
+          path: dist/my-portfolio
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
