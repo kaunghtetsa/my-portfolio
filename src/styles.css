@@ -18,3 +18,5 @@ body {
     padding: 20px;
     border-radius: 20px;
     }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

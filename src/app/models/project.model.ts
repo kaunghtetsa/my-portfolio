@@ -1,15 +1,8 @@
 export interface Project {
     title: string;
+    recap:string;
     description: string;
     technologies: string[];
-    link: string;
-    image: string; 
+    image: string;
+    headcount: number;    
   }
-  export interface ProjectDetails {
-    title: string;
-    description: string;
-    technologies: string[];
-    headcount: number;
-    
-  }
-  
