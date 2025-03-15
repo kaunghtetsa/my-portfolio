@@ -29,8 +29,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [],
-            "baseHref": "/my-portfolio/",
-            "deployUrl": "/my-portfolio/"
+            "baseHref": "/my-portfolio/browser/",
+            "deployUrl": "/my-portfolio/browser/"
           },
           "configurations": {
             "production": {
@@ -47,8 +47,8 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/my-portfolio/",
-              "deployUrl": "/my-portfolio/"
+              "baseHref": "/my-portfolio/browser/",
+              "deployUrl": "/my-portfolio/browser/"
             },
             "development": {
               "optimization": false,
