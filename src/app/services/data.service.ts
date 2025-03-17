@@ -19,7 +19,10 @@ export class DataService {
         "skills": [
           { "name": "HTML", "level": "Intermediate", "imgname": "html.png", "rate": 3 },
           { "name": "CSS", "level": "Intermediate", "imgname": "css.png", "rate": 3 },
-          { "name": "JavaScript", "level": "Intermediate", "imgname": "javascript.png", "rate": 2 }
+          { "name": "JavaScript", "level": "Intermediate", "imgname": "javascript.png", "rate": 2 },
+          { "name": "Bootstrap", "level": "Intermediate", "imgname": "bootstrap.webp", "rate": 2 },
+          { "name": "TypeScript", "level": "Intermediate", "imgname": "typescript.png", "rate": 2 }
+ 
         ]
       },
       {
@@ -35,7 +38,7 @@ export class DataService {
           { "name": "API", "level": "Intermediate", "imgname": "api.webp", "rate": 5 },
           { "name": "Web API", "level": "Intermediate", "imgname": "webapi.webp", "rate": 5 },
           { "name": "Web Services", "level": "Intermediate", "imgname": "webservice.png", "rate": 5 },
-          { "name": "Swagger", "level": "Intermediate", "imgname": "swagger.png", "rate": 4 }
+          { "name": "Swagger", "level": "Intermediate", "imgname": "swagger.webp", "rate": 4 }
         ]
       },
       {
@@ -50,7 +53,7 @@ export class DataService {
         "type": "Databases",
         "skills": [
           { "name": "SQL Server", "level": "Advanced", "imgname": "sqlserver.jpg", "rate": 5 },
-          { "name": "MySQL", "level": "Intermediate", "imgname": "mysql.png", "rate": 5 },
+          { "name": "MySQL", "level": "Intermediate", "imgname": "mysql.webp", "rate": 5 },
           { "name": "PostgreSQL", "level": "Intermediate", "imgname": "postgressql.png", "rate": 4 }
         ]
       },
@@ -60,17 +63,19 @@ export class DataService {
           { "name": "GitHub", "level": "Intermediate", "imgname": "github.png", "rate": 4 },
           { "name": "GitLab", "level": "Intermediate", "imgname": "gitlab.png", "rate": 4 },
           { "name": "JIRA", "level": "Intermediate", "imgname": "jira.png", "rate": 4 },
-          { "name": "Postman", "level": "Intermediate", "imgname": "postman.jpg", "rate": 4 },
+          { "name": "Postman", "level": "Intermediate", "imgname": "postman.webp", "rate": 4 },
           { "name": "CI/CD", "level": "Intermediate", "imgname": "cicd.avif", "rate": 3 },
-          { "name": "Docker", "level": "Intermediate", "imgname": "docker.png", "rate": 3 }
+          { "name": "Docker", "level": "Intermediate", "imgname": "docker.png", "rate": 3 },
+          { "name": "SSIS", "level": "Intermediate", "imgname": "ssis.webp", "rate": 2 }
+   
         ]
       },
       {
         "type": "Frameworks & Libraries",
         "skills": [
-          { "name": ".NET Core", "level": "Advanced", "imgname": "NET_Core.png", "rate": 5 },
+          { "name": ".NET Core", "level": "Advanced", "imgname": "NET_Core.webp", "rate": 5 },
           { "name": "ASP.NET", "level": "Advanced", "imgname": "aspnet.jpg", "rate": 4 },
-          { "name": "Entity Framework Core", "level": "Intermediate", "imgname": "entityframework.png", "rate": 5 },
+          { "name": "Entity Framework Core", "level": "Intermediate", "imgname": "entityframework.webp", "rate": 5 },
           { "name": "WPF", "level": "Intermediate", "imgname": "wpf.jpg", "rate": 4 },
           { "name": "AngularJS", "level": "Intermediate", "imgname": "angular.png", "rate": 2 }
         ]
@@ -79,8 +84,14 @@ export class DataService {
         "type": "Other",
         "skills": [
           { "name": "ADO.Net", "level": "Intermediate", "imgname": "adonet.jpg", "rate": 5 },
-          { "name": "Microservices", "level": "Intermediate", "imgname": "microservice.png", "rate": 5 },
-          { "name": "Windows Services", "level": "Intermediate", "imgname": "windowservice.jpg", "rate": 4 }
+          { "name": "Microservices", "level": "Intermediate", "imgname": "microservice.avif", "rate": 5 },
+          { "name": "Windows Services", "level": "Intermediate", "imgname": "windowservice.jpg", "rate": 4 },
+          { "name": "Windows Server", "level": "Intermediate", "imgname": "windowserver.webp", "rate": 4 },
+          { "name": "Redis", "level": "Intermediate", "imgname": "redis.webp", "rate": 2 },
+          { "name": "Android Development", "level": "Beginner", "imgname": "android.webp", "rate": 2 },
+          { "name": "Photoshop CS6", "level": "Beginner", "imgname": "photoshopcs6.webp", "rate": 2 },
+          { "name": "AI Utilization", "level": "Intermediate", "imgname": "ai-utilization.webp", "rate": 3 }
+      
         ]
       }
     ]

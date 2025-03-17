@@ -6,8 +6,20 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterLink, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'], // Updated to CSS
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'my-portfolio';
+
+  toggleNavbar() {
+    const navbar = document.querySelector('.navbar-collapse');
+    navbar?.classList.toggle('show');
+  }
+
+  closeNavbar() {
+    const navbar = document.querySelector('.navbar-collapse');
+    if (navbar?.classList.contains('show')) {
+      navbar.classList.remove('show');
+    }
+  }
 }

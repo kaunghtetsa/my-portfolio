@@ -23,7 +23,11 @@
           Message is required.
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Submit</button>
+      <button type="submit" class="btn btn-primary d-flex align-items-center justify-content-center gap-2 px-4 py-2 rounded-pill" [disabled]="contactForm.invalid">
+        <i class="bi bi-send fs-5"></i>
+        <span class="fw-semibold">Send</span>
+      </button>
+      
       <!-- Success Message -->
       <div *ngIf="messageStatus" [ngClass]="isError ? 'alert alert-danger' : 'alert alert-success'">
         {{ messageStatus }}

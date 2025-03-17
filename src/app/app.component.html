@@ -1,25 +1,27 @@
 <div class="d-flex flex-column min-vh-100">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" routerLink="/">Kaung Htet San</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/" (click)="closeNavbar()">Home</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/about" (click)="closeNavbar()">About</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/skills" (click)="closeNavbar()">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/projects" (click)="closeNavbar()">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/contact" (click)="closeNavbar()">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content with Full Height -->
+  <!-- Main Content -->
   <div class="flex-grow-1 d-flex align-items-center justify-content-center">
     <router-outlet></router-outlet>
   </div>

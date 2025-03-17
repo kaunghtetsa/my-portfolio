@@ -26,13 +26,14 @@
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ],
-            "baseHref": "/my-portfolio/browser/",
-            "deployUrl": "/my-portfolio/browser/"
+            "baseHref": "/my-portfolio/",
+            "deployUrl": "/my-portfolio/"
           },
           "configurations": {
             "production": {
@@ -49,8 +50,8 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/my-portfolio/browser/",
-              "deployUrl": "/my-portfolio/browser/"
+              "baseHref": "/my-portfolio/",
+              "deployUrl": "/my-portfolio/"
             },
             "development": {
               "optimization": false,
@@ -89,6 +90,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [

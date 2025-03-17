@@ -9,6 +9,6 @@ bootstrapApplication(AppComponent, {
   ...appConfig,
   providers: [
     ...(appConfig.providers || []),
-    importProvidersFrom(MatDialogModule) // ✅ Ensure MatDialog works globally
+    importProvidersFrom(MatDialogModule)
   ]
 }).catch((err) => console.error(err));
