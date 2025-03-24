@@ -66,8 +66,9 @@ export class DataService {
           { "name": "Postman", "level": "Intermediate", "imgname": "postman.webp", "rate": 4 },
           { "name": "CI/CD", "level": "Intermediate", "imgname": "cicd.avif", "rate": 3 },
           { "name": "Docker", "level": "Intermediate", "imgname": "docker.png", "rate": 3 },
+          { "name": "Kubernetes", "level": "Intermediate", "imgname": "kubernetes.webp", "rate": 2 },
           { "name": "SSIS", "level": "Intermediate", "imgname": "ssis.webp", "rate": 2 }
-   
+          
         ]
       },
       {
@@ -77,9 +78,17 @@ export class DataService {
           { "name": "ASP.NET", "level": "Advanced", "imgname": "aspnet.jpg", "rate": 4 },
           { "name": "Entity Framework Core", "level": "Intermediate", "imgname": "entityframework.webp", "rate": 5 },
           { "name": "WPF", "level": "Intermediate", "imgname": "wpf.jpg", "rate": 4 },
-          { "name": "AngularJS", "level": "Intermediate", "imgname": "angular.png", "rate": 2 }
+          { "name": "AngularJS", "level": "Intermediate", "imgname": "angular.png", "rate": 2 },
+          { "name": "Dapper", "level": "Intermediate", "imgname": "dapper.webp", "rate": 2 }
         ]
       },
+      {
+        "type": "Testing Frameworks",
+        "skills": [
+          { "name": "MSTest", "level": "Intermediate", "imgname": "mstest.webp", "rate": 3 },
+          { "name": "xUnit", "level": "Intermediate", "imgname": "xunit.webp", "rate": 3 }
+        ]
+      },     
       {
         "type": "Other",
         "skills": [
