@@ -78,7 +78,7 @@ export class DataService {
           { "name": "ASP.NET", "level": "Advanced", "imgname": "aspnet.jpg", "rate": 4 },
           { "name": "Entity Framework Core", "level": "Intermediate", "imgname": "entityframework.webp", "rate": 5 },
           { "name": "WPF", "level": "Intermediate", "imgname": "wpf.jpg", "rate": 4 },
-          { "name": "AngularJS", "level": "Intermediate", "imgname": "angular.png", "rate": 2 },
+          { "name": "Angular", "level": "Intermediate", "imgname": "angular.webp", "rate": 2 },
           { "name": "Dapper", "level": "Intermediate", "imgname": "dapper.webp", "rate": 2 }
         ]
       },
